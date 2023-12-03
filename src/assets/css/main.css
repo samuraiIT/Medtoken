@@ -1,0 +1,38 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+}
+.p-card .p-card-content {
+  padding: 0 !important;
+}
+.p-card .p-card-content .field{
+  margin-bottom: 0 !important;
+}
+.p-card .p-card-content h5{
+
+}
+.p-dialog .p-dialog-content{
+  padding: 0;
+  border-top: 0 none;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.p-dialog .p-dialog-header{
+  padding-bottom: 0 !important;	
+}	
+/*
+.p-dialog-header{
+  padding-left: 90% !important;
+}
+.p-card-title{
+  text-align: center;
+  margin-bottom: 4rem !important;
+}
+*/

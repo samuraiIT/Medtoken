@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "code": "f230fh0g3",
+            "name": "Посещение врача",
+            "description": "КТ процедура",
+            "image": "invite-kt.png",
+            "price": "500 000",
+            "category": "Бессрочный",
+            "quantity": 24,
+            "inventoryStatus": "ПЕРЕПРОДАЖА",
+            "rating": 5
+        },
+        {
+            "id": "2",
+            "code": "nvklal433",
+            "name": "Лабораторные анализы",
+            "description": "Биохимический анализ",
+            "image": "lab-biochim.png",
+            "price": "800 000",
+            "category": "Бессрочный",
+            "quantity": 61,
+            "inventoryStatus": "ПОДДЕЛКА",
+            "rating": 4
+        },
+        {
+            "id": "3",
+            "code": "zz21cz3c1",
+            "name": "Телемединские консультации",
+            "description": "Кардиолог",
+            "image": "telemed-cardiolog.png",
+            "price": 0,
+            "category": "Использован 1000 раз",
+            "quantity": 2,
+            "inventoryStatus": "ИСПОЛЬЗОВАН",
+            "rating": 3
+       }
+    ]
+}

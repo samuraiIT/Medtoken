@@ -1,0 +1,203 @@
+@import './_variables.scss';
+@import './sass/_layout.scss';
+@import './_overrides.scss';
+
+.layout-topbar{
+  z-index: 1000;
+}
+#topbar-menu{
+  transform-origin: center bottom 0px;
+  top: 4rem;
+  left: 2rem;
+  min-width: 83px;
+  z-index: 1000;
+  position: fixed;
+  background-color: var(--surface-overlay);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.02), 0px 0px 2px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card .p-image img{
+  max-width: 100%
+}
+.p-image2{
+	width: 100%;
+	text-align: center;
+}
+.p-component, .p-component * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.custom-galleria.fullscreen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	position: absolute;
+}
+
+.custom-galleria .p-galleria-content2 {
+    position: relative;
+}
+.custom-galleria.fullscreen .p-galleria-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.p-galleria-item-container2 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+.p-galleria-item2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.p-image-preview img{
+   transform: rotate(0deg) scale(1);
+    -webkit-transition: -webkit-transform .15s;
+    transition: -webkit-transform .15s;
+    transition: transform .15s;
+    transition: transform .15s, -webkit-transform .15s;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.p-image-mask {
+    z-index: 1101;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.p-component-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 0.2s;	
+}
+.p-image-mask {
+    --maskbg: rgba(0, 0, 0, 0.9);
+}
+.p-component-overlay-enter {
+    animation: p-component-overlay-enter-animation 150ms forwards;
+}
+.p-image-preview-indicator{
+  opacity: 1 !important;
+}
+.pi.p-image-preview-icon2{
+  background: #333;
+  border-radius: 50%;
+  padding: 4px;
+}
+.p-image-preview-icon{
+  opacity: 0
+}
+.p-image-preview-indicator:hover .p-image-preview-icon{
+  opacity: 1
+}
+.p-radiobutton{
+  width: 7rem !important;
+}
+.p-radiobutton .p-radiobutton-box{
+  width: 7rem !important;
+  height: 2rem;
+  border-radius: 6px;
+}
+
+
+
+
+.p-radiobutton .p-radiobutton-box .p-radiobutton-icon{
+  transform: translateZ(0) scale(1.0,1.0);
+  width: 6rem !important;
+  visibility: inherit !important;
+  line-height: 10px;
+  color: #6366f1;
+}
+
+.p-radiobutton-icon:before{
+  content: 'Смотреть'; 
+  font-size: 12px;  
+  font-weight: 700;
+
+}
+.p-radiobutton .p-radiobutton-box.p-highlight{
+  border-color: none;
+
+  width: 10rem !important;
+  visibility: inherit !important;
+  line-height: 10px;
+  color: #6366f1;
+  background: transparent !important;
+}
+
+.p-input-filled .p-radiobutton .p-radiobutton-box.p-highlight{
+  transform: translateZ(0) scale(1.0,1.0);
+  background-color: white !important;
+align-self: center;
+}
+
+.p-radiobutton .p-radiobutton-box .p-radiobutton-icon{
+  background-color: inherit;
+}
+
+.p-input-filled .p-radiobutton .p-radiobutton-box {
+  
+  background-color: transparent !important;
+  align-self: center;
+}
+.layout-topbar .layout-topbar-logo {
+  width: 20rem;	
+}
+
+.p-galleria.fullscreen .pi-eye{
+  position: absolute;
+  top: 2rem;
+  right: 12px;
+}
+
+.p-galleria.fullscreen .pi-eye::before{
+  content: "\e90b";
+} 
+
+.p-image-preview-container:hover > .p-image-preview-indicator {
+  background-color: transparent !important;
+  transition: opacity none !important;
+}
+.p-progressbar .p-progressbar-label {
+    font-size: .8rem !important;
+}
+.p-fluid .p-fileupload .p-button {
+    min-width: 8vw;
+}
+.topbarmenu_open{
+  display: block !important;
+}
